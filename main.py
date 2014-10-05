@@ -35,7 +35,7 @@ steps = current_activity['lifetime']['total']['steps']
 weather = get_weather()
 print weather
 #putzing around: essentially I'd want this to send a Yo if it was raining, but today it's not raining!!!
-if weather == 'Partly Cloudy' and steps >= previous_steps + 100:
+if weather == 'Raining' and steps >= previous_steps + 100:
 	print "You're moving and the weather is bad so i'll warn ya with a Yo"
 	post_yo()
 else:
